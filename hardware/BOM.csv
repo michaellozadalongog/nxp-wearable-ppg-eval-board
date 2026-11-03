@@ -1,0 +1,18 @@
+RefDes,Qty,Manufacturer,MPN,Description,Package,Notes
+U1,1,NXP,LPC55S16JBD64,Arm Cortex-M33 150MHz MCU 16-bit ADC,LQFP64,Main MCU; ADC0 CH0/CH1 for PPG channels
+U2,1,Texas Instruments,OPA2380AIDGKR,Dual transimpedance op-amp 90MHz GBW,VSSOP-8,TIA ch1/ch2
+U3,1,Texas Instruments,TPS7A2033PDBVR,3.3V 300mA ultra-low-noise LDO,SOT-23-5,Analog rail AVDD
+U4,1,Texas Instruments,TPS7A0533PDBVR,3.3V 200mA LDO,SOT-23-5,Digital rail DVDD
+D1,1,OSRAM,SFH 4059,850nm IR LED,0402,PPG IR (ch1)
+D2,1,Kingbright,APHHS1005SURCK,660nm red LED,0402,PPG red (ch2)
+PD1;PD2,2,OSRAM,SFH 2701,Silicon photodiode,SMD 1.4x1.6,One per channel
+Q1;Q2,2,Nexperia,PMV16XN,N-MOSFET LED switch,SOT-23,Constant-current sink with R_sense
+RS1;RS2,2,Yageo,RC0603FR-0710RL,10R 1% LED sense,0603,~20mA at 200mV set
+RF1;RF2,2,Yageo,RT0603BRD07100KL,100k 0.1% TIA feedback,0603,Gain 100 kV/A
+CF1;CF2,2,Murata,GRM1885C1H100JA01D,10pF C0G TIA comp,0603,BW ~160kHz
+C1-C12,12,Murata,GRM155R71C104KA88D,100nF X7R decoupling,0402,One per VDD pin at pin
+C13;C14,2,Murata,GRM188R61A106KE69D,10uF X5R bulk,0603,LDO in/out
+U5,1,Texas Instruments,REF3330AIDBZR,3.0V reference,SOT-23,ADC VREFP
+J1,1,ARM-standard,FTSH-105-01-L-DV-K,10-pin SWD debug,1.27mm,MCU-Link/LPC-Link2
+J2,1,GCT,USB4105-GF-A,USB-C power/VCOM,SMD,5V input
+FB1,1,Murata,BLM18PG221SN1D,Ferrite bead AVDD isolation,0603,Single-point AGND/DGND join
